@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arranging DIVS</title>
+    <style>
+        *{ /*how to remove the default margin and padding of all elements*/
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+            
+        .container {
+            background-color: #fff;
+            display: flex; /* allows you to specify how to arrange elements in the div container*/
+            justify-content: space-between; /*distributes the items evenly with space between them*/
+            flex-wrap: wrap;
+            height: 200px;
+        }
+        .item {
+            flex: 1 1 300px; /* to allow the items to grow and shrink based on the available space, with a minimum width of 300px */
+            margin: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            width: 40%;
+            justify-content: space-between; /*distributes the items evenly with space between them*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container -1">
+        <div class="item">Item 1
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Et quod eligendi repellendus!
+                Et quod eligendi necessitatibus!
+                Et quod eligendi necessitatibus!Volupt maxime quam nemo omnis excepturi harum eligendi provident ab Libero est aperium vitae
+                tenetur quia</p>
+        </div>
+        <div class="item">Item 2
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Et quod eligendi repellendus!
+                Et quod eligendi necessitatibus!
+                Et quod eligendi necessitatibus!Volupt maxime quam nemo omnis excepturi harum eligendi provident ab Libero est aperium vitae
+                tenetur quia</p>
+        </div>
+        <div class="item">Item 3
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Et quod eligendi repellendus!
+                Et quod eligendi necessitatibus!
+                Et quod eligendi necessitatibus!Volupt maxime quam nemo omnis excepturi harum eligendi provident ab Libero est aperium vitae
+                tenetur quia</p>
+        </div>
+        <div class="item">Item 4
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Et quod eligendi repellendus!
+                Et quod eligendi necessitatibus!
+                Et quod eligendi necessitatibus!Volupt maxime quam nemo omnis excepturi harum eligendi provident ab Libero est aperium vitae
+                tenetur quia</p>
+        </div>
+    </div>
+    <div class="container -2">
+        <div class="item">Item 5
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Et quod eligendi repellendus!
+                Et quod eligendi necessitatibus!
+                Et quod eligendi necessitatibus!Volupt maxime quam nemo omnis excepturi harum eligendi provident ab Libero est aperium vitae
+                tenetur quia</p>
+        </div>
+        <div class="item">Item 6
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Et quod eligendi repellendus!
+                Et quod eligendi necessitatibus!
+                Et quod eligendi necessitatibus!Volupt maxime quam nemo omnis excepturi harum eligendi provident ab Libero est aperium vitae
+                tenetur quia</p>
+    </div>
+    </div>
+</body>
+</html>

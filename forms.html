@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #a6aaa3b3;
+            font-family: "Josefin Slab", serif;
+        }
+        form{
+            width: 35%;
+            border: 2px solid #050505;
+            padding: 12px;
+            color: #dfd2d8;
+            margin: auto;
+        }
+        .lbl-full{
+            display: block; /* stretch the whole width */
+            margin-bottom: 5px;
+        }
+        .input-full-width{
+            width: 100%;
+            padding: 6px; /* add some padding inside the input */
+            margin-bottom: 10px; /* add some space below the input */
+            border: 3px solid #0c0101;
+            border-radius: 4px;
+            box-sizing: border-box; /* include padding and border in the width */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Form input text, email, password, phone, date, radio button, checkbox,select -->
+
+    <form action="">
+        <label class="lbl-full" for="full_name">First and last name</label>
+        <input class="input-full-width" type="text" name="full_name" id="full_name" placeholder="Lucky Doe" required>
+        
+           <label class="lbl-full" for="email">Email</label>
+        <input class="input-full-width" type="email" name="email" id="email" placeholder="lucky.doe@example.com" required>
+
+        <label class="lbl-full" for="password">Password</label>
+        <input class="input-full-width" type="password" name="password" id="password" placeholder="**********" required>
+
+        <label class="lbl-full" for="phone">Phone</label>
+        <input class="input-full-width" type="tel" name="phone" id="phone" placeholder="0712345678" required>
+
+        <label class="lbl-full" for="dob">Date of birth</label>
+        <input class="input-full-width" type="date" name="dob" id="dob" required min ="1940-01-01" max="2008-12-31">
+
+        <label class="lbl-full" for="gender">Gender</label>
+
+        <input type="radio" name="gender" id="male" value="m" checked>
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="f" checked>
+        <label for="female">Female</label>
+
+        <br>
+        <p> Select your favorite sports</p>
+
+        <input type="checkbox" name="Tennis" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+
+        <br>
+
+        <input type="checkbox" name="Football" id="football" value="football">
+        <label for="football">Football</label>
+
+        <br>
+
+        <input type="checkbox" name="Basketball" id="basketball" value="basketball">
+        <label for="basketball">Basketball</label>
+
+        <br>
+
+        <input type="checkbox" name="Swimming" id="swimming" value="swimming">
+        <label for="swimming">Swimming</label>
+
+        <br>
+        <br>
+        <label class="lbl-full" for="county">County</label>
+        <select class="input-full-width" name="county" id="county" required>
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="nairobi">Nairobi</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    
+        </form >
+
+</body>
+</html>
